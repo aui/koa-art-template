@@ -33,7 +33,7 @@ Or you can checkout the [example](https://github.com/aui/art-template/tree/maste
 
 ## Options
 
-@see [art-template](https://github.com/aui/art-template) options
+Supports [art-template options](https://github.com/aui/art-template#Options).
 
 
 ## Inlcude
