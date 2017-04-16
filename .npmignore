@@ -1,0 +1,8 @@
+test
+example
+docs
+coverage
+.eslintrc.json
+.gitignore
+.npmignore
+.travis.yml
