@@ -4,6 +4,7 @@
   "description": "art-template render middleware for koa",
   "main": "src/index.js",
   "scripts": {
+    "example": "node --harmony example/app.js",
     "test": "make test"
   },
   "dependencies": {
