@@ -3,7 +3,7 @@ const template = require('art-template');
 
 
 const defaultSettings = {
-    cache: process.env.NODE_ENV === 'production',
+    debug: process.env.NODE_ENV !== 'production',
     writeResp: true
 };
 
@@ -22,8 +22,14 @@ exports = module.exports = function (app, settings = {}) {
     function render(filename, data) {
         debug(`render: ${filename}`);
         settings.filename = filename;
-        const render = template.compile(settings);
-        return render(data);
+        try {
+            const render = template.compile(settings);
+            return render(data);
+        } catch (error) {
+            delete error.stack;
+            error = JSON.stringify(error, null, 4);
+            throw new Error(error);
+        }
     }
 
 
