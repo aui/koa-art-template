@@ -1,6 +1,6 @@
 {
   "name": "koa-art-template",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "art-template render middleware for koa",
   "main": "src/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "supertest": "^3.0.0"
   },
   "peerDependencies": {
-    "art-template": ">=4.0.0-beta8"
+    "art-template": ">=4.1.0"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
     "art-template"
   ],
   "engine": {
-    "node": ">=7.6.0"
+    "node": ">= 7.6.0"
   },
   "author": "aui",
   "license": "MIT",

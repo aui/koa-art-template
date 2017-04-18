@@ -1,10 +1,14 @@
 # koa-art-template
 
+[![NPM Version](https://img.shields.io/npm/v/koa-art-template.svg)](https://npmjs.org/package/koa-art-template)
+[![Node.js Version](https://img.shields.io/node/v/koa-art-template.svg)](http://nodejs.org/download/)
+
 Koa art-template view render middleware. support all feature of [art-template](https://github.com/aui/art-template).
 
 ## Install
 
-```
+```shell
+npm install --save art-template
 npm install --save koa-art-template
 ```
 
