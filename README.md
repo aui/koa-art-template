@@ -43,12 +43,48 @@ Supports [art-template options](https://github.com/aui/art-template#Options).
 
 ## Inlcude
 
-Supports art-template includes.
-
 ```
 <div>
   <% include('user') %>
 </div>
+```
+
+## Layout
+
+layout.art:
+
+```html
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{block 'title'}}My Site{{/block}}</title>
+
+    {{block 'head'}}
+    <link rel="stylesheet" href="main.css">
+    {{/block}}
+</head>
+<body>
+    {{block 'content'}}{{/block}}
+</body>
+</html>
+```
+
+index.art:
+
+```html
+{{extend './layout.art'}}
+
+{{block 'title'}}My Page{{/block}}
+
+{{block 'head'}}
+    {{@parent}}
+    <link rel="stylesheet" href="custom.css">
+{{/block}}
+
+{{block 'content'}}
+<p>This is just an awesome page.</p>
+{{/block}}
 ```
 
 ## State
