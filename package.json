@@ -29,7 +29,7 @@
     "view",
     "art-template"
   ],
-  "engine": {
+  "engines": {
     "node": ">= 7.6.0"
   },
   "author": "aui",
