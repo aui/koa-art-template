@@ -34,7 +34,7 @@ app.use(async function (ctx) {
 app.listen(8080);
 ```
 
-Or you can checkout the [example](https://github.com/aui/art-template/tree/master/example).
+Or you can checkout the [example](https://github.com/aui/koa-art-template/tree/master/example).
 
 ## Options
 
