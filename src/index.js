@@ -27,7 +27,6 @@ exports = module.exports = function (app, settings = {}) {
             return render(data);
         } catch (error) {
             delete error.stack;
-            error = JSON.stringify(error, null, 4);
             throw new Error(error);
         }
     }
