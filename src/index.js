@@ -22,14 +22,8 @@ exports = module.exports = function (app, settings = {}) {
     function render(filename, data) {
         debug(`render: ${filename}`);
         settings.filename = filename;
-        try {
-            const render = template.compile(settings);
-            return render(data);
-        } catch (error) {
-            delete error.stack;
-            error = JSON.stringify(error, null, 4);
-            throw new Error(error);
-        }
+        const render = template.compile(settings);
+        return render(data);
     }
 
 
